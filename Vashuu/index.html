@@ -436,8 +436,8 @@
           <h2 style="text-align:center;padding-bottom: 50px; ">MEMORIESSSSS!!!!</h2>
 
           <div class="row">
-          <div class="col-md-4" style="float:left;">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="col-md-4" style="float:left;">
+              <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel" data-interval="3000">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner vertical" role="listbox">
                   <div class="item active">
@@ -489,7 +489,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Wrapper for slides -->
           <div class="carousel-inner vertical" role="listbox">
             <div class="item active">
@@ -510,7 +510,7 @@
 
               </div>
             </div>
-             <div class="item active">
+            <div class="item active">
               <img src="images/vertical/10.jpg" alt="First Slide">
               <div class="carousel-caption">
 
@@ -542,7 +542,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Wrapper for slides -->
           <div class="carousel-inner vertical" role="listbox">
             <div class="item active">
@@ -595,10 +595,10 @@
         </div>
       </div>
     </div>
-    <div class="row"><br></div>
+    <div class="row"></div>
     <div class="row">
       <div class="col-md-4">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Wrapper for slides -->
           <div class="carousel-inner vertical" role="listbox">
             <div class="item active">
@@ -650,7 +650,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carousel-example-generic5" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Wrapper for slides -->
           <div class="carousel-inner vertical" role="listbox">
             <div class="item active">
@@ -685,7 +685,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carousel-example-generic6" class="carousel slide" data-ride="carousel" data-interval="3000">
           <!-- Wrapper for slides -->
           <div class="carousel-inner vertical" role="listbox">
             <div class="item active">
@@ -1016,7 +1016,12 @@
       var img = '<img src=\"'+imagePath+'\" style=\"height: 100%; width: 100%; object-fit: contain;\">';
       $('<div class="item"><div class="carousel-content">'+img+'</div></div>').appendTo('#horizontal3');
     }
-
+    setCarouselHeight('#carousel-example-generic1');
+    setCarouselHeight('#carousel-example-generic2');
+    setCarouselHeight('#carousel-example-generic3');
+    setCarouselHeight('#carousel-example-generic4');
+    setCarouselHeight('#carousel-example-generic5');
+    setCarouselHeight('#carousel-example-generic6');
   });
   $.getJSON('wish_test.json', function(data) {
     var output = "<ul>";
@@ -1053,6 +1058,7 @@
 
 
   function setCarouselHeight(id) {
+    console.log('called for'+id);
     var slideHeight = [];
     $(id + ' .item').each(function() {
       console.log('adding to carousel');
