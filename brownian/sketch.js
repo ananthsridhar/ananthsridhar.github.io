@@ -5,8 +5,8 @@ var connectivityNumber = 2;
 var pointLiner = new Array();
 
 function setup() {
-  console.log(window.innerWidth + "," + window.innerHeight);
-  var canvas = createCanvas(window.innerWidth,window.innerHeight);
+  console.log(windowWidth + "," + windowHeight);
+  var canvas = createCanvas(window.innerWidth-18,windowHeight);
   canvas.parent('canvasHolder');
   pointSample = new Point();
   for(i=0;i<numberOfPoints;i++)
