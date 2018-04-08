@@ -46,6 +46,8 @@ section{
 height: 300px;
 background-color: grey;
 border-radius: 50%;
+border : 5px solid white;
+box-shadow: 5px 8px 8px 1px #3a3c3a;
 }
 
 
@@ -211,7 +213,7 @@ transform-origin: 140%;
 z-index: -2;
 }*/
 
-@media screen and (min-width:990px){
+@media screen and (min-width:1025px){
 
   aside h1{
     -webkit-transform: rotate(90deg) translateX(20px);
