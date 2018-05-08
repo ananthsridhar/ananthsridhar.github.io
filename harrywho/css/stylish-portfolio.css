@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro';
+  background-color: #0c0c0c;
 }
 
 section {
@@ -23,7 +24,8 @@ height: auto;
 }
 
 .content-section-heading h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color : #cccccc;
 }
 
 .content-section-heading h3 {
@@ -475,7 +477,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #6b6b6b;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -535,3 +537,68 @@ a:hover, a:focus, a:active {
 .text-secondary {
   color: #ecb807 !important;
 }
+
+/* =Progress Bars
+-------------------------------------------------------------- */
+.progress {
+    margin-bottom: 6px;
+    background-color: transparent;
+    border-radius: 11px;
+    box-shadow: none;
+    border: 1px solid #303030;
+    padding: 3px;
+    height: 26px;
+}
+
+.progress-bar {
+	font-size: 13px;
+    background-color: #8980fe;
+    box-shadow: none;
+    border-radius: 11px;
+    line-height: 18px;
+    padding-left: 6px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.progress-meter {
+	min-height: 15px;
+	border-bottom: 1px solid #303030;
+}
+
+.progress-meter > .meter {
+	position: relative;
+	float: left;
+	min-height: 15px;
+	border-width: 0px;
+	border-style: solid;
+	border-color: #303030;
+}
+
+.progress-meter > .meter-left {
+	border-left-width: 1px;
+}
+
+.progress-meter > .meter-right {
+	float: right;
+	border-right-width: 1px;
+}
+
+.progress-meter > .meter-right:last-child {
+	border-left-width: 1px;
+}
+
+.progress-meter > .meter > .meter-text {
+	position: absolute;
+	display: inline-block;
+	bottom: -20px;
+	width: 100%;
+	font-size: 12px;
+	color: #606060;
+	text-align: left;
+}
+
+.progress-meter > .meter.meter-right > .meter-text {
+	/* text-align: right; */
+}
+.mb30 { margin-bottom:30px !important; }
