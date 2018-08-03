@@ -26,7 +26,7 @@ height: auto;
 .content-section-heading h2 {
   font-family: 'STARWARS';
   text-transform: uppercase;
-  color : #cccccc;
+  color : #312d2d !important;
 }
 
 .light-back{
@@ -559,162 +559,39 @@ a:hover, a:focus, a:active {
   color: #ecb807 !important;
 }
 
-/* =Progress Bars
--------------------------------------------------------------- */
-.progress {
-    margin-bottom: 6px;
-    background-color: transparent;
-    border-radius: 11px;
-    box-shadow: none;
-    border: 1px solid #303030;
-    padding: 3px;
-    height: 26px;
+.skills-card{
+  background: white;
+  width: 100%;
+  height:500px;
+  overflow:hidden;
+  
+
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+  transition: all 0.1s ease-in-out 0s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    -o-transition: all 0.1s ease-in-out 0s;
+}
+.skills-card:hover{
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+box-shadow : 2px 5px 4px 2px #848080;
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
 }
 
-.progress-bar {
-	font-size: 13px;
-    background-color: #8980fe;
-    box-shadow: none;
-    border-radius: 11px;
-    line-height: 18px;
-    padding-left: 6px;
-    text-align: left;
-    font-weight: 300;
-}
-.progress-bar{
-float: left;
-    width: 0;
-    height: 100%;
-    font-size: 14px;
-    line-height: 22px;
-    color: #fff;
-    text-align: center;
-    background-color: #4fbfa8;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: width .6s ease;
-    transition: width .6s ease;
-  }
-
-.progress-meter {
-	min-height: 15px;
-	border-bottom: 1px solid #303030;
+.skills-image{
+  width : 100%;
+  height : 200px;
+  float: right;
+height: auto;
+width: inherit;
 }
 
-.progress-meter > .meter {
-	position: relative;
-	float: left;
-	min-height: 15px;
-	border-width: 0px;
-	border-style: solid;
-	border-color: #303030;
-}
-
-.progress-meter > .meter-left {
-	border-left-width: 1px;
-}
-
-.progress-meter > .meter-right {
-	float: right;
-	border-right-width: 1px;
-}
-
-.progress-meter > .meter-right:last-child {
-	border-left-width: 1px;
-}
-
-.progress-meter > .meter > .meter-text {
-	position: absolute;
-	display: inline-block;
-	bottom: -20px;
-	width: auto;
-	font-size: 12px;
-	color: #606060;
-	text-align: left;
-}
-
-.progress-meter > .meter.meter-right > .meter-text {
-	/* text-align: right; */
-}
-.mb30 { margin-bottom:30px !important; }
-
-.progress-title {
-    text-align: left;
-    font-weight: 300;
-    text-transform: uppercase
-}
-
-.progress-bar-skill1 {
-    background-color: #d1d1d1 !important;
-    background-color: #9adacd !important
-}
-
-.progress-striped .progress-bar-skill1 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-striped .progress-bar-skill1 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-bar-skill2 {
-    background-color: #c8c7c7 !important;
-    background-color: #87d3c4 !important
-}
-
-.progress-striped .progress-bar-skill2 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-striped .progress-bar-skill2 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-bar-skill3 {
-    background-color: #bdbdbd !important;
-    background-color: #74cdba !important
-}
-
-.progress-striped .progress-bar-skill3 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-striped .progress-bar-skill3 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-bar-skill4 {
-    background-color: #b3b2b2 !important;
-    background-color: #62c6b1 !important
-}
-
-.progress-striped .progress-bar-skill4 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-striped .progress-bar-skill4 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-bar-skill5 {
-    background-color: #a9a8a8 !important;
-    background-color: #4fbfa8 !important
-}
-
-.progress-striped .progress-bar-skill5 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
-}
-
-.progress-striped .progress-bar-skill5 {
-    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent)
+.skills-desc{
+  float: left;
+  margin: 2%;
+  color : black;
 }
