@@ -42,7 +42,7 @@ h2 {
 }
 
 a {
-    color: #2196f3;
+    color: #dbe4ea;
 }
 
 a:hover,
@@ -103,8 +103,9 @@ a:active {
       }
       #sideNav .navbar-brand {
           display: flex;
-          margin: auto auto 0;
           padding: 0.5rem;
+          color : white;
+              margin-left: auto;
       }
       #sideNav .navbar-brand .img-profile {
           max-width: 10rem;
@@ -128,7 +129,38 @@ a:active {
       #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
           display: block;
       }
+
   }
+
+  .content{
+    max-width: 350px;
+margin-right: 0;
+margin-left: auto;
+color : white;
+  }
+  .proj-title {
+text-transform: uppercase;
+font-weight: bold;
+border-bottom: 1px solid #fff;
+}
+
+.proj-desc {
+    text-align: right;
+}
+
+ul{
+list-style-type: disc;
+    margin-left: 1.25rem;
+  }
+
+  .proj-intro p {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.researchBar {
+      margin-left: auto;
+}
 
 /*==================================================
                   BUTTON (Generic)
