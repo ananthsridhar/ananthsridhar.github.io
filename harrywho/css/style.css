@@ -93,6 +93,10 @@ a:active {
       #sideNav {
           text-align: center;
           position: sticky;
+          position: -webkit-sticky;
+ position: -moz-sticky;
+ position: -ms-sticky;
+ position: -o-sticky;
           float:left;
           top: 0;
           left: 0;
