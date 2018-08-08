@@ -23,10 +23,15 @@ section {
 height: auto;
 }
 
+.content-section .container {
+  max-width: 90%;
+}
+
 .content-section-heading h2 {
-  font-family: 'STARWARS';
+  /* font-family: 'STARWARS'; */
+  font-family: 'Saira Extra Condensed';
   text-transform: uppercase;
-  color : #312d2d !important;
+  color : #312d2d;
 }
 
 .light-back{
@@ -34,7 +39,8 @@ height: auto;
 }
 
 .content-section-heading h3 {
-  font-family: 'STARWARS';
+  /* font-family: 'STARWARS'; */
+  font-family: 'Saira Extra Condensed';
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -45,7 +51,7 @@ height: auto;
 }
 
 .skillText{
-  float : Left
+  float : left
 }
 
 .skill{
@@ -97,7 +103,8 @@ h6 {
   text-align: center;
   color: white;
   /* background: #343a4008!important */
-  background-color: #343a40!important;
+  background-color: #0c0c0c!important;
+    box-shadow: -1px 1px 10px 2px #989595;
   line-height: 45px;
   z-index : 999;
 }
@@ -151,13 +158,14 @@ transform: translateX(-50%);
 }
 
 .masthead h1 {
-  font-family: 'STARWARS';
+  /* font-family: 'STARWARS'; */
+  font-family: 'Saira Extra Condensed'
 
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  -webkit-text-stroke : 0.5px yellow;
-  -webkit-text-fill-color:transparent;
+  /* -webkit-text-stroke : 0.5px yellow;
+  -webkit-text-fill-color:transparent; */
 }
 
 @media (min-width: 992px) {
@@ -165,7 +173,7 @@ transform: translateX(-50%);
     height: 100vh;
   }
   .masthead h1 {
-    font-size: 5.5rem;
+    font-size: 4.0rem;
   }
 }
 
@@ -186,11 +194,16 @@ ul.navi{
 
 .nav-link{
   font-family: 'Helvetica';
+  text-transform: uppercase;
   font-weight:bolder;
   font-size : 1em;
-  color : #00AAFF;
+  color : #e0ecec;
   margin-left:20px;
   margin-right:20px;
+}
+
+.nav-item{
+      /* margin-left: 14%; */
 }
 
 @media (min-width:992px){
@@ -200,12 +213,15 @@ ul.navi{
 }
 
 .sticky{
-  background: #343a40;
+  background: #0c0c0c;
   position: fixed;
   top : 0;
   left : 0;
   width: 100%;
-  box-shadow: 0px 0px 10px 3px #d0cdcd;
+  box-shadow: -1px 4px 10px 3px #989595;
+  -webkit-box-pack: none !important;
+    -ms-flex-pack: none !important;
+    justify-content: none  !important;
 }
 
 .scrollDown {
@@ -548,7 +564,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-light {
-      color: #0c0c0c;
+    background-color: #e3e6e8 !important;
 }
 
 .text-primary {
@@ -561,17 +577,16 @@ a:hover, a:focus, a:active {
 
 .skills-card{
   background: white;
-  width: 100%;
-  height:500px;
-  overflow:hidden;
-  
-
-  border-top-left-radius : 10px;
-  border-top-right-radius : 10px;
-  transition: all 0.1s ease-in-out 0s;
-    -moz-transition: all 0.1s ease-in-out 0s;
-    -webkit-transition: all 0.1s ease-in-out 0s;
-    -o-transition: all 0.1s ease-in-out 0s;
+width: 80%;
+margin: auto;
+height: 500px;
+overflow: hidden;
+border-radius: 10px;
+    box-shadow: 2px 1px 4px 2px #848080;
+transition: all 0.1s ease-in-out 0s;
+-moz-transition: all 0.1s ease-in-out 0s;
+-webkit-transition: all 0.1s ease-in-out 0s;
+-o-transition: all 0.1s ease-in-out 0s;
 }
 .skills-card:hover{
   -webkit-transform: scale(1.1);
