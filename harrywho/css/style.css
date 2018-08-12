@@ -253,11 +253,21 @@ list-style-type: disc;
 
   @media (min-width: 768px) {
       section.resume-section {
-          min-height: 100vh;
+          min-height: 60vh;
       }
       section.resume-section .resume-item .resume-date {
           min-width: 18rem;
       }
+      h1 {
+    font-size: 3rem;
+    line-height: 5.5rem;
+}
+#sideNav{
+  width : 25rem;
+}
+.sim-body{
+  padding-left: 25rem !important;
+}
   }
 
   @media (min-width: 992px) {
