@@ -690,7 +690,8 @@ box-shadow : 2px 5px 4px 2px #848080;
 #quote-carousel img
 {
   width: 250px;
-  height: 100px
+  min-height : 100px;
+  height: auto;
 }
 /* End carousel */
 
