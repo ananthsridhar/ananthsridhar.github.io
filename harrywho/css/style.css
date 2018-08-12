@@ -18,6 +18,25 @@ body {
     }
 }
 
+.resume-section h2{
+  text-transform: none;
+  font-size : 2.5rem;
+}
+
+.resume-section p{
+  text-align: justify;
+    text-justify: inter-word;
+    line-height: 2;
+}
+
+.resume-section img{
+  margin-top : 2% !important;
+  margin-bottom : 2% !important;
+}
+
+.proj-desc ul {
+  list-style : none;
+}
 
 
 h1,
@@ -26,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Saira Extra Condensed', serif;
+    font-family: 'Calibri';
     font-weight: 700;
     text-transform: uppercase;
     color: #343a40;
@@ -147,11 +166,16 @@ color : white;
 text-transform: uppercase;
 font-weight: bold;
 border-bottom: 1px solid #fff;
-text-align: right;
+text-align: right;;
+}
+
+.proj-title h4{
+  color : white;
 }
 
 .proj-desc {
     text-align: right;
+    margin-top : 15px;
 }
 
 ul{
@@ -162,6 +186,7 @@ list-style-type: disc;
   .proj-intro p {
     text-align: justify;
     font-size: 1rem;
+    font-weight: 100;
 }
 
 .researchBar {
@@ -251,18 +276,22 @@ list-style-type: disc;
     margin-top:15% !important;
   }
   .bg-primary {
-      background-color: #2196f3 !important;
+      background-color: #005980 !important;
   }
 
   .text-primary {
-      color: #2196f3 !important;
+      color: white !important;
+  }
+
+  .text-main{
+    font-weight: 500;
+    letter-spacing: 4px;
   }
 
 /*==================================================
                       ABOUT
 ====================================================*/
   #about {
-      background: url("../img/bg-masthead2.jpg");
       background-position: center center;
       background-repeat: no-repeat;
   }
