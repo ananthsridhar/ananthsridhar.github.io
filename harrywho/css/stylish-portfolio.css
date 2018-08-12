@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Calibri';
   background-color: #0c0c0c;
 }
 
@@ -30,9 +30,11 @@ height: auto;
 
 .content-section-heading h2 {
   /* font-family: 'STARWARS'; */
-  font-family: 'Saira Extra Condensed';
+  /* font-family: 'Saira Extra Condensed'; */
+  font-family : 'Calibri';
   text-transform: uppercase;
   color : #312d2d;
+  letter-spacing: 8px;
 }
 
 .light-back{
@@ -41,7 +43,8 @@ height: auto;
 
 .content-section-heading h3 {
   /* font-family: 'STARWARS'; */
-  font-family: 'Saira Extra Condensed';
+  /* font-family: 'Saira Extra Condensed'; */
+  font-family : 'Calibri';
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -111,9 +114,11 @@ h6 {
 }
 
 .footName{
-  font-size : 1em;
-  font-family: 'STARWARS';
+  font-size : 1.5em;
+  font-family: 'Calibri';
   font-weight: 100;
+  text-transform:uppercase;
+  letter-spacing: 4px;
 }
 
 .rounded{
@@ -161,12 +166,20 @@ transform: translateX(-50%);
 .masthead h1 {
   /* font-family: 'STARWARS'; */
   font-family: 'Saira Extra Condensed';
-
+font-family : 'Calibri';
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+letter-spacing: 12px;
   /* -webkit-text-stroke : 0.5px yellow;
   -webkit-text-fill-color:transparent; */
+}
+
+.masthead h3 {
+  color : #8d8d8d;
+  font-size: 3em;
+  letter-spacing: 12px;
+      font-weight: 100;
 }
 
 @media (min-width: 992px) {
@@ -174,7 +187,7 @@ transform: translateX(-50%);
     height: 100vh;
   }
   .masthead h1 {
-    font-size: 4.0rem;
+    font-size: 6.0rem;
   }
 }
 
@@ -500,6 +513,9 @@ ul.navi{
   }
 }
 
+.about-sec{
+padding-left: 24%;
+}
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -564,8 +580,15 @@ a:hover, a:focus, a:active {
   background-color: #252525 !important;
 }
 
+.bg-dark {
+    background-color: #f6f6f6 !important;
+}
 .bg-light {
-    background-color: #e3e6e8 !important;
+    background-color: #ffffff !important;
+}
+
+.bg-tertiary {
+  background-color: #E5E5E5 !important;
 }
 
 .text-primary {
@@ -582,7 +605,7 @@ width: 80%;
 margin: auto;
 height: 500px;
 overflow: hidden;
-border-radius: 10px;
+border-radius: 22px;
     box-shadow: 2px 1px 4px 2px #848080;
 transition: all 0.1s ease-in-out 0s;
 -moz-transition: all 0.1s ease-in-out 0s;
@@ -594,8 +617,6 @@ transition: all 0.1s ease-in-out 0s;
         -ms-transform: scale(1.1);
         transform: scale(1.1);
 box-shadow : 2px 5px 4px 2px #848080;
-  border-top-left-radius : 10px;
-  border-top-right-radius : 10px;
 }
 
 .skills-image{
@@ -604,9 +625,18 @@ box-shadow : 2px 5px 4px 2px #848080;
 
 .skills-desc{
   float: left;
-  margin: 2%;
+  margin: 5%;
   color : black;
 }
+
+.skills-desc h4{
+      font-size: 22px;
+}
+
+.skills-desc p{
+  font-size: 16px;
+}
+
 
 .banner-head{
   height : 60vh;
@@ -633,12 +663,12 @@ box-shadow : 2px 5px 4px 2px #848080;
 /* Previous button  */
 #quote-carousel .carousel-control.left
 {
-  left: -100px;
+  left: -166px;
 }
 /* Next button  */
 #quote-carousel .carousel-control.right
 {
-  right: -100px !important;
+  right: -166px !important;
 }
 /* Changes the position of the indicators */
 #quote-carousel .carousel-indicators
@@ -676,17 +706,6 @@ box-shadow : 2px 5px 4px 2px #848080;
 
 .item h2,h4{
   text-transform: uppercase;
-}
-
-.item blockquote img {
-    margin-bottom: 10px;
-}
-
-.item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
 }
 
 
