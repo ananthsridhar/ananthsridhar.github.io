@@ -31,6 +31,10 @@ h6 {
     color: #343a40;
 }
 
+.alter{
+  color : #acb3b9
+}
+
 h1 {
     font-size: 6rem;
     line-height: 5.5rem;
@@ -244,7 +248,17 @@ a:active {
   #experience .card h4{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: none;
-    color:#555;
+    color:#757272;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  @media (min-width: 767px) {
+    #experience .card h4{
+      font-size: 1.5em;
+
+    }
   }
 
 /*====================================================
