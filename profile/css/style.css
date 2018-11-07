@@ -98,7 +98,6 @@ a:active {
       font-size : 1.2rem;
   }
 
-  @media (min-width: 992px) {
   @media (min-width: 1024px) {
       #sideNav {
           padding : 0;
@@ -111,7 +110,6 @@ a:active {
           left: 0;
           display: flex;
           flex-direction: column;
-          width: 30rem;
           width: 20rem;
           height: 100vh;
       }
@@ -190,13 +188,11 @@ a:active {
   .heading-border {
       width: 60px;
       height: 10px;
-      background-color: #2196f3;
       background-color:#1e152a !important;
       margin: 0 auto 20px auto;
   }
 
   section.resume-section {
-      border-bottom: 1px solid #dee2e6;
       border-bottom: 1px solid #1e152a;
       padding-top: 5rem !important;
       padding-bottom: 5rem !important;
@@ -220,7 +216,6 @@ a:active {
       }
   }
 
-  @media (min-width: 992px) {
   @media (min-width: 1024px) {
     .main-holder{
       padding-left:20rem !important;
@@ -236,7 +231,6 @@ a:active {
   }
 
   .text-primary {
-      color: #2196f3 !important;
       color: #1e152a !important;
   }
 
@@ -254,18 +248,19 @@ a:active {
     /*font-size: 100%;*/
   }
 
+
 /*==================================================
                     EXPERIENCE
 ====================================================*/
   #experience {
-    background: #6E7E85;
+  //  background: #6E7E85;
   }
 
   #experience .card {
     background-color: #1E152A;
     color: #d0c9dc !important;
     border-color : #066d9a;
-    box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.21);
+    box-shadow: 3px 7px 6px 1px #43276a;
   }
 
   #experience .card h3{
@@ -274,22 +269,15 @@ a:active {
 
   #experience .card h4{
     text-transform: none;
-<<<<<<< HEAD
-    font-size: 1.4em;
-    text-transform: uppercase;
-    font-weight: 300;
-    color : #eae9ec;
-=======
-    color:#1e152a;
+    color:#acbac1;
     font-size: 1em;
     text-transform: uppercase;
-    font-weight: 700;
-    color: #334249;
+    font-weight: 400;
     letter-spacing: 0.7px;
   }
 
   .card .text-primary{
-      color : #1e152a;
+      color : inherit !important;
       text-transform: uppercase;
       font-weight : 400;
   }
@@ -297,11 +285,11 @@ a:active {
   #experience .card{
     border: 3px solid #1e152a;
     box-shadow: 0px 3px 2px #43276a;
->>>>>>> f19c437c3e8c567e21fc5daeddde701ea4e72164
   }
 
 #experience .card .resume-date{
   text-transform: uppercase;
+  color : white !important;
 }
 
   @media (min-width: 767px) {
@@ -345,24 +333,27 @@ a:active {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-    opacity: 0;
-    background: rgba(54, 160, 245, 0.73);
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    box-shadow: #171425 3px 4px 2px;
+    background: #1e152ab0;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port:hover {
-    opacity: 1;
+    /* opacity: 0; */
+    box-shadow: #171425 6px 6px 2px;
+
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
-    font-size: 20px;
     position: absolute;
     top: 50%;
     width: 100%;
     height: 20px;
     margin-top: -12px;
+    padding: 0 2% 0 2%;
     text-align: center;
     color: white;
 }
@@ -477,7 +468,6 @@ a:active {
 ======================================================*/
 
 #skills {
-    background-image: url("../img/bg-stats.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
