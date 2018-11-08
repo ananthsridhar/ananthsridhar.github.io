@@ -336,13 +336,13 @@ a:active {
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     transition: all ease 0.3s;
-    box-shadow: #171425 3px 4px 2px;
+    box-shadow: #43276a 3px 4px 2px;
     background: #1e152ab0;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port:hover {
     /* opacity: 0; */
-    box-shadow: #171425 6px 6px 2px;
+    box-shadow: #43276a 6px 6px 2px;
 
 
 }
@@ -355,7 +355,14 @@ a:active {
     margin-top: -12px;
     padding: 0 2% 0 2%;
     text-align: center;
+    font-size : 0.9rem;
     color: white;
+}
+
+@media (max-width: 1200px) {
+    #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
+         font-size : 0.7rem;
+    }
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content i {
