@@ -244,6 +244,15 @@ a:active {
       background-repeat: no-repeat;
   }
 
+  #about .img-profile{
+    width:300px;
+    height:auto;
+    background-color:grey;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px 7px #1e152a;
+    margin : 5%;
+  }
+
   #about h1 {
     /*font-size: 100%;*/
   }
