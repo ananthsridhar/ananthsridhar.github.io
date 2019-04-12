@@ -213,11 +213,15 @@ a:active {
       border-bottom: 1px solid #1e152a;
       padding-top: 5rem !important;
       padding-bottom: 5rem !important;
-      color:##B7CECE;
+      color:#1e152a;
   }
 
   section.resume-section .resume-item .resume-date {
       min-width: none;
+  }
+
+  section.resume-section p{
+      font-weight : 600;
   }
 
 
@@ -296,7 +300,7 @@ a:active {
   #experience .card h4{
     text-transform: none;
     color:#acbac1;
-    font-size: 1em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.7px;
@@ -323,6 +327,23 @@ a:active {
       font-size: 1.5em;
 
     }
+  }
+
+  .skills-list{
+
+  }
+
+  .skill-box{
+    width: fit-content;
+    padding: 8px;
+    padding-right: 10px;
+    align-content: center;
+    border: 3px solid white;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .skill-box p{
+      font-size : 0.8em;
   }
 
 /*====================================================
@@ -801,7 +822,21 @@ a:active {
 }
 
 .contact-side-desc{
-    padding-top: 40px;
+    width: 50%;
+    padding: 10px;
+    background-color: #1e152a;
+    color: #ccc;
+    border: 3px solid #1e152a;
+    box-shadow: 0px 3px 2px #43276a;
+    margin-top : 2%;
+    border-radius: .25rem;
+}
+.contact-side-desc h3{
+    color : #ccc;
+}
+.contact-side-desc a:hover{
+    text-decoration: none;
+    color :inherit;
 }
 
 .contact-box-desc h3{
@@ -809,7 +844,7 @@ a:active {
 }
 
 .contact-box-desc h3 i{
-  color: #2196f3;
+  color: #ccc;
 }
 
 .social-icon-f li{
@@ -841,6 +876,10 @@ a:active {
 
     .contact-box-desc{
         text-align: center;
+    }
+    .contact-side-desc {
+        width: auto;
+        margin-top : 5%;
     }
 
     #contact .social-icon-f{
