@@ -10,11 +10,11 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Ananth Sridhar">
 
-  <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
   <title>Ananth Sridhar</title>
-  <link rel="icon" href="https://ananthsridhar.github.io/img/favicon.ico"/>
+  <!-- <link rel="icon" href="https://ananthsridhar.github.io/profile/img/favicon.ico" /> -->
   <!-- Global stylesheets -->
   <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +26,7 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
   <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
   <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/preloader.css" rel="stylesheet">
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
   <script language="javascript" type="text/javascript" src="libraries/p52DCollision.js"></script>
   <!-- uncomment lines below to include extra p5 libraries -->
@@ -58,8 +59,36 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
   </style>
 </head>
 
-<body id="page-top">
-
+<body id="page-top" onload="disablePreloader()">
+  <div class="preloader">
+    <div class="csscssload-load-frame">
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+      </div>
+    </div>
   <div class="p-0">
     <section class="text-center title-page" id="">
       <a class="js-scroll-trigger" href="#about">
@@ -261,10 +290,10 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
               <div class="skill-box">
                 <p class="my-auto">Unity3D</p>
               </div>
-              
+
               <div class="skill-box">
-                  <p class="my-auto">Javascript (Unityscript)</p>
-                </div>
+                <p class="my-auto">Javascript (Unityscript)</p>
+              </div>
               <div class="skill-box">
                 <p class="my-auto">C#</p>
               </div>
@@ -510,15 +539,15 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
             <div class="heading-border-light"></div>
             <h5 style="color:grey"></h5>
           </div>
-          
+
           <p class="text-center">Don't hesitate to get in touch with me for any reason you see fit. Constructive
             critisicm and/or sarcastic applause welcome!</p>
 
           <div class="col-sm-12 mt-5">
             <div class="contact-cont2">
               <div class="contact-mail contact-side-desc contact-box-desc text-center mx-auto">
-                <h3> <a class="my-auto"
-                href="mailto:nanthsree22@gmail.com" style="color : #fff">Email Me at nanthsree22@gmail.com</a></h3>
+                <h3> <a class="my-auto" href="mailto:nanthsree22@gmail.com" style="color : #fff">Email Me at
+                    nanthsree22@gmail.com</a></h3>
               </div>
               <div class="contact-mail contact-side-desc contact-box-desc text-center mx-auto">
 
@@ -1087,6 +1116,10 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
       $(this).addClass("active");
     });
 
+    function disablePreloader(){
+      $('.preloader').fadeOut(500);
+    }
+    
     // SKILLS
     $(function () {
       $('.counter').counterUp({
@@ -1095,6 +1128,7 @@ Hmmm, wanna see my code eh. Go ahead me hearty!
       });
 
     });
+   
   </script>
   <script type="text/javascript">
     (function ($) {
