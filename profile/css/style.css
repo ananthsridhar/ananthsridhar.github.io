@@ -355,7 +355,7 @@ a:active {
     margin-left : 0;
   }
 
-  .skill-box.card{
+  .skill-box{
     width: fit-content;
     padding: 8px;
     padding-right: 10px;
@@ -363,7 +363,10 @@ a:active {
     border: 3px solid #e9e6ec;
     color :white;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
+  }
+
+  .skill-box.card{
     margin-top : 0rem !important;
   }
   .skill-box p{
