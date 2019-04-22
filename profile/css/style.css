@@ -266,12 +266,19 @@ a:active {
   }
 
   #about .img-profile{
-    width:300px;
+    width:200px;
     height:auto;
     background-color:grey;
     border-radius: 50%;
     box-shadow: 1px 1px 15px 7px #1e152a;
     margin : 5%;
+    margin-bottom:2rem;
+  }
+
+  @media (min-width:767px){
+      .img-profile{
+          width :300px!important;
+      }
   }
 
   #about h1 {
@@ -283,7 +290,7 @@ a:active {
                     EXPERIENCE
 ====================================================*/
   #experience {
-  //  background: #6E7E85;
+    /* background: #6E7E85; */
   }
 
   #experience .card {
@@ -313,8 +320,10 @@ a:active {
   }
 
   #experience .card{
-    border: 3px solid #1e152a;
+      background-color: #1e152a;
+   color :white;
     box-shadow: 0px 3px 2px #43276a;
+    
   }
 
 #experience .card .resume-date{
@@ -327,10 +336,23 @@ a:active {
       font-size: 1.5em;
 
     }
+    #skills .card{
+        font-size: 1.1em;
+    }
   }
 
+  #skills .card{
+    background-color: #1e152a;
+    color :white;
+     box-shadow: 0px 3px 2px #43276a;
+     padding : 2%;
+     margin-top : 2rem;
+  }
+  #skills .card h3 {
+      margin-bottom : 5%;
+  }
   .skills-list{
-
+    margin-left : 0;
   }
 
   .skill-box{
@@ -338,12 +360,23 @@ a:active {
     padding: 8px;
     padding-right: 10px;
     align-content: center;
-    border: 3px solid white;
+    border: 3px solid #e9e6ec;
+    color :white;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px
+  }
+
+  .skill-box.card{
+    margin-top : 0rem !important;
   }
   .skill-box p{
       font-size : 0.8em;
+  }
+
+  .skill-box-invert{
+    border: 3px solid #1e152a;
+    background : #1e152a;
+    color : white;
   }
 
 /*====================================================

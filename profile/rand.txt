@@ -19,5 +19,17 @@ about himself in third person. Loves to immerse himself in code during his free 
 Spotify playlists. Someday he hopes to enter the Stand Up comic scene, but not today. On rainy weekends he likes to sit in and transport himself across graphically created worlds
 on the laptop he cleans four times a day, on other days you might catch him cycling to the beach in the evenings, quickly restocking the calories he burnt with hot bajji.
 
+Languages
+Java JavaScript HTML5 CSS SQL
+
+Frameworks / Tools
+React React-Native jQuery Bootstrap Unity3D Git GoogleTango P5.js
+
+Misc / Tools
+Data Structures Algorithms ObjectOrientedDesign
+
+Acquainted with
+Angular SpringBoot 
+
 
 
