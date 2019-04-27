@@ -224,6 +224,9 @@ a:active {
       font-weight : 600;
   }
 
+  .resume-item li {
+      line-height: 1.7;
+  }
 
   @media (min-width: 768px) {
       section.resume-section {
