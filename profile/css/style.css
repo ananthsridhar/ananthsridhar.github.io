@@ -377,6 +377,11 @@ a:active {
     border: 3px solid #1e152a;
     background : #1e152a;
     color : white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius : 2%;
   }
 
 /*====================================================

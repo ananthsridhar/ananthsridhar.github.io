@@ -21,15 +21,19 @@ var Score = 0;
 var floorHeight = -50;
 
 function setup() {
-  createCanvas(1000,600);
+  // createCanvas(1000,600);
+  var width = document.getElementById('canvasHolder').clientWidth;
+  var height = document.getElementById('canvasHolder').clientHeight;
+  var canvas = createCanvas(width,height);
+  canvas.parent('canvasHolder');
   launcher = new Launcher();
   projectile = new Projectile();
   boxLocation = width - 50;
   frameRate(120);
   angleSlider = createSlider(-90, -0, -45);
-  angleSlider.position(200,  10);
+  // angleSlider.position(200,  10);
   velocitySlider = createSlider(5, 100, 50);
-  velocitySlider.position(200,  60);
+  // velocitySlider.position(200,  60);
   reset();
 }
 
