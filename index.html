@@ -1,5 +1,1211 @@
-<html>
-<body>
-	<h1> Hi Welcome</h1>
+<!--
+author: Ananth Sridhar
+Hmmm, wanna see my code eh. Go ahead me hearty!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Ananth Sridhar">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Ananth Sridhar</title>
+  <!-- <link rel="icon" href="https://ananthsridhar.github.io/profile/img/favicon.ico" /> -->
+  <!-- Global stylesheets -->
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/preloader.css" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p52DCollision.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+
+  <script language="javascript" type="text/javascript" src="js/p5/sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="js/p5/point.js"></script>
+
+
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .banner-container {
+      width: 100%;
+      background-color: #000000a8 !important;
+
+    }
+
+    #about {
+      /* background-image: url('img/research/research1.png') !important; */
+      /* background-color: #1e152a; */
+    }
+
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body id="page-top" onload="disablePreloader()">
+  <div class="preloader">
+    <div class="csscssload-load-frame">
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+    </div>
+  </div>
+  <div class="p-0">
+    <section class="text-center title-page" id="">
+      <a class="js-scroll-trigger" href="#about">
+        <div class="sketch" id="canvasHolder"></div>
+        <div class="container-fluid my-auto main-title">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="">ANANTH SRIDHAR
+              </h1>
+            </div>
+          </div>
+        </div>
+  </div>
+  </a>
+  </section>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none  mx-0 px-0">
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#portfolio">projects</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item only-mob">
+          <a class="nav-link" href="Resume 3.0.pdf" target="_blank">Download Resume</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="nav-item only-screen misc-item">
+      <a style="color : rgba(255,255,255,.5)"
+        href="https://drive.google.com/file/d/1mfCVneP5CAXskRyp9ccaF5pk1n3ZLcg5/view?usp=sharing"
+        target="_blank">Download Resume</a>
+    </div>
+
+  </nav>
+
+  <div class="container-fluid p-0 main-holder">
+
+    <!--====================================================
+                        ABOUT
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+
+      <div style="margin: 0 auto">
+        <h2 class="text-primary text-center">About</h2>
+        <div class="mb-5 heading-border"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <img class="img-circle img-fluid img-profile" src="img/profile.jpg">
+            </div>
+          </div>
+          <p class="">Ananth is the sort of person that gets excited when something has an API and has developer OCD
+            about his code. Ananth is also the sort of person that loves Bajji, Vada Pav, Dogs and talking
+            about himself in third person. Loves to immerse himself in code during his free time and thinking about very
+            deep things while listening to random
+            Spotify playlists.
+            <!-- Someday he hopes to enter the Stand Up comic scene, but not today.-->
+          </p>
+          <p></p>On rainy weekends he likes to sit in and transport himself across graphically created worlds
+          on the laptop he cleans four times a day, on other days you might catch him cycling to the beach in the
+          evenings, quickly restocking the calories he burnt with hot bajji. Meanwhile, he has a lot of
+          places on his travel bucket list, ticking them off slowly, but surely. Maybe he'll blog about it someday</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <p>Ananth could be cool. You should check him out.</p>
+
+            <li class="list-inline-item">
+              <a href="https://twitter.com/psyx22" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/ananth-sridhar" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/ananthsridhar" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://open.spotify.com/user/nanthsree2?si=VRJ6R9ZgRB-Twtxhb2PbGA" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <!--====================================================
+                        EXPERIENCE
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 " id="experience">
+      <div class="row my-auto">
+        <div class="col-12">
+          <h2 class="text-primary  text-center">Experience & Education</h2>
+          <div class="mb-5 heading-border"></div>
+        </div>
+        <div class="resume-item col-md-12 col-sm-12 ">
+          <div class="card mx-0 p-4 mb-5">
+            <div class=" resume-content">
+              <h3 class="mb-3 text-center">Senior Application Developer</h3>
+              <h4 class="mb-3 text-center" style="text-align:left">Cognizant Technology Solutions, Chennai</h4>
+              <div class="resume-date text-center">
+                <span class="text-primary">August 2015 - Present</span>
+              </div>
+              <h5 class="mb-3"></h5>
+              <ul>
+                <li>Worked on development and maintenance of Client web portal using
+                  <b>Java,HTML,CSS,jQuery and database using SQL</b>. Responsible for
+                  <ul>
+                    <li>Understanding requirements and creation of workflow and look as per design</li>
+                    <li>Debugging and applying fixes for any defects or bugs that may be detected both at Front and Back
+                      end</li>
+                  </ul>
+                </li>
+                <li>Migration of Data Center, involving setup of Weblogic and Apache servers and application deployment
+                  for development and
+                  production environments</li>
+                <li>Workflow migration and Upgradation of Command center and Applications related to Print (Output) -
+                  <b>Command Center, Java</b></li>
+                  <li>Experienced working in large teams as well as under Agile methodology</li>
+                <li>Developed and recieved appreciation for <b>numerous innovations</b> that reduced workload and streamlined
+                  process</li>
+              </ul>
+            </div>
+            <div class="row skills-list mx-3">
+              <div class="skill-box">
+                <p class="my-auto">Java</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">SQL</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">Javascript</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">HTML</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">CSS</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">jQuery</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">SpringBoot</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">Agile Methodology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-item col-md-12 col-sm-12">
+          <div class="card mx-0 p-4 mb-5">
+            <div class="resume-content">
+              <h3 class="mb-3 text-center">Intern Unity Game Developer</h3>
+              <h4 class="mb-3  text-center">Blue Giant Interactive Pvt Ltd., Hyderabad</h4>
+              <div class="resume-date text-center">
+                <span class="text-primary">June 2014 - July 2014</span>
+              </div>
+              <h5 class="mb-3 text-center"></h5>
+              <ul>
+                <li>Part of two member team assigned with developing a Word based Puzzle RPG game from scratch
+                </li>
+                <li>Developing the gameplay and mechanics from the bottom up using the Unity Game Engine and programming
+                  in C#
+                </li>
+                <li>Engaged and coordinated with other contributors like Animators, Modellers and developers to bring
+                  life to the game effectively
+                </li>
+              </ul>
+            </div>
+            <div class="row skills-list mx-3">
+              <div class="skill-box">
+                <p class="my-auto">Unity3D</p>
+              </div>
+
+              <div class="skill-box">
+                <p class="my-auto">Javascript (Unityscript)</p>
+              </div>
+              <div class="skill-box">
+                <p class="my-auto">C#</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="mb-5 heading-border"></div>
+        <div class="resume-item col-md-12 col-sm-12">
+          <div class="card mx-0 p-4 mb-5">
+            <div class="resume-content">
+              <!-- <i class="fa fa-university fa-3 my-auto text-primary text-center"></i> -->
+              <h3 class="mb-3 text-center">Bachelors : Computer Science and Engineering</h3>
+              <h4 class="mb-3 text-center">Madras Institute of Technology (Anna University), Chennai</h4>
+              <div class="resume-date text-center">
+                <span class="text-primary">August 2011 - May 2015</span>
+              </div>
+              <h5 class="mb-3 ml-3">CGPA : 7.8</h5>
+              <ul>
+                <li>Active participant and contributor to Development workshops and Hackathons</li>
+                <li>Involved in Computer Society of MIT, the college Open source software club </li>
+                <li>Founding member of the MIT Dramatics Club - The Box Office</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--====================================================
+                        SKILLS
+    ======================================================-->
+    <section class="resume-section d-flex flex-column" id="skills">
+      <div class="p-lg-5 p-3">
+        <div class="row text-center my-auto ">
+          <div class="col-12">
+            <h2 class="text-primary text-center">Skills</h2>
+            <div class="mb-5 heading-border"></div>
+          </div>
+        </div>
+        <div class="skill-container">
+          <div class="row mx-auto">
+            <div class="col-md-4 offset-md-1 col-sm-12 text-center card">
+              <h3>Languages</h3>
+              <div class="row skills-list" style="justify-content: center">
+                <div class="skill-box card">JavaScript</div>
+                <div class="skill-box card">Java</div>
+                <div class="skill-box card">HTML5</div>
+                <div class="skill-box card">CSS</div>
+                <div class="skill-box card">C# (Unity)</div>
+                <div class="skill-box card">SQL</div>
+              </div>
+            </div>
+            <div class="col-md-4 offset-md-2 col-sm-12 text-center card">
+              <h3>Frameworks / Tools</h3>
+              <div class="row skills-list" style="justify-content: center">
+                <div class="skill-box card">React</div>
+                <div class="skill-box card">React Native</div>
+                <div class="skill-box card">jQuery</div>
+                <div class="skill-box card">Bootstrap</div>
+                <div class="skill-box card">Unity3D</div>
+                <div class="skill-box card">Git</div>
+                <div class="skill-box card">Google Tango</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-auto">
+            <div class="col-md-4 offset-md-1 col-sm-12 text-center card">
+              <h3>Miscellaneous</h3>
+              <div class="row skills-list" style="justify-content: center">
+                <div class="skill-box card">Data Structures</div>
+                <div class="skill-box card">Algorithms</div>
+                <div class="skill-box card">Object Oriented Design</div>
+              </div>
+            </div>
+            <div class="col-md-4 offset-md-2 col-sm-12 text-center card">
+              <h3>Acquainted With</h3>
+              <div class="row skills-list" style="justify-content: center;">
+                <div class="skill-box card">Angular</div>
+                <div class="skill-box card">Spring Boot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--====================================================
+                        PORTFOLIO
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
+      <div class="row my-auto">
+        <div class="col-12">
+          <h2 class="text-primary  text-center">Projects</h2>
+          <div class="mb-5 heading-border"></div>
+        </div>
+        <!-- <div class="col-md-12">
+                <div class="port-head-cont">
+                  <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="consulting">Web Design</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="finance">Mobile Apps</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="marketing">Graphics Design</button>
+                </div>
+              </div> -->
+      </div>
+      <div class="row mx-auto">
+        <p>I love dabbling in code and spend quite a lot of time thinking of really cool things to do. Don't get to work
+          on all of them, but end up trying and getting my feet wet in
+          random interesting stuff. A few of my more prominent ventures are below.
+        </p>
+      </div>
+      <div class="row my-auto">
+        <div class="col-sm-4 portfolio-item filter finance">
+          <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+            <div class="caption-port">
+              <div class="caption-port-content">
+                <h3>Thats My Station!</h3>
+                <p class="d-none d-lg-block">React Native application to aid your commute</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/tms/Comb.PNG" alt="">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item filter marketing">
+          <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+            <div class="caption-port">
+              <div class="caption-port-content">
+                <h3>Educational Content in VR/AR</h3>
+
+              </div>
+            </div>
+            <img class="img img-fluid img-responsive" src="img/portfolio/tango2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item filter consulting">
+          <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
+            <div class="caption-port">
+              <div class="caption-port-content">
+                <h3>Experiments with P5.js</h3>
+                <!-- <p class="d-none d-lg-block">Mini games in p5.js. Best viewed and played on Desktop</p> -->
+              </div>
+            </div>
+            <img class="img img-fluid img-responsive" src="img/p5js.svg" style="height:270px;width:300px;margin:10px"
+              alt="">
+          </a>
+        </div>
+        <!-- <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <h3>Valet Employee Management Application</h3>
+                              <p class="d-none d-lg-block">Mobile application with backend for Client</p>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-7.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-8.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-9.jpg" alt="">
+                  </a>
+              </div> -->
+        <!-- <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-1.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-2.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-3.jpg" alt="">
+                  </a>
+              </div> -->
+      </div>
+    </section>
+
+
+
+    <!--====================================================
+                           AWARDS
+    ======================================================-->
+    <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+          <div class="row my-auto">
+              <div class="col-12">
+                <h2 class="text-primary  text-center">Awards</h2>
+                <div class="mb-5 heading-border"></div>
+              </div>
+              <div class="main-award" id="award-box">
+                  <div class="award">
+                      <div class="award-icon"></div>
+                      <div class="award-content">
+                          <span class="date">Apr 2017 - Mar 2018</span>
+                          <h5 class="title">Google Analytics Certified Developer</h5>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="award">
+                      <div class="award-icon"></div>
+                      <div class="award-content">
+                          <span class="date">Apr 2018 - Mar 2019</span>
+                          <h5 class="title">Mobile Web Specialist - Google Certification</h5>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section> -->
+
+    <!--====================================================
+                          CONTACT
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <div class="row my-auto" id="contact">
+        <div class="col-md-12">
+          <div class="contact-cont">
+            <h2 class="text-primary text-center">CONTACT ME</h2>
+            <div class="mb-5 heading-border"></div>
+            <div class="heading-border-light"></div>
+            <h5 style="color:grey"></h5>
+          </div>
+
+          <p class="text-center">Don't hesitate to get in touch with me for any reason you see fit. Constructive
+            critisicm and/or sarcastic applause welcome!</p>
+
+          <div class="col-sm-12 mt-5">
+            <div class="contact-cont2">
+              <div class="contact-mail contact-side-desc contact-box-desc text-center mx-auto">
+                <h3> <a class="my-auto" href="mailto:nanthsree22@gmail.com" style="color : #fff">Email Me at
+                    nanthsree22@gmail.com</a></h3>
+              </div>
+              <div class="contact-mail contact-side-desc contact-box-desc text-center mx-auto">
+
+                <ul class="list-inline list-social-icons mb-0">
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/psyx22" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/ananth-sridhar" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/ananthsridhar" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://open.spotify.com/user/nanthsree2?si=VRJ6R9ZgRB-Twtxhb2PbGA" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+  </div>
+  <!--====================================================
+                    PORTFOLIO MODALS
+======================================================-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h3 class="text-center">Thats My Station [Under Development]</h3>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+
+                  <img class="img-responsive img-fluid" src="img/tms/Comb.PNG" alt="">
+
+                </div>
+                <div class="col-md-4">
+                  <p>A personal project as well as a learning experience, I set out to develop a React native
+                    application that can prevent that constant commute fear of missing your station.
+                    Using your location and indexed station data, it can sound an alarm, alerting you to your
+                    approaching destination station. I must admit that this idea was born out of multiple
+                    frustrating personal experiences of the kind that I set out to prevent.
+                  </p>
+                  <p><i>The application is still under development and the screenshots do not represent the final
+                      product</i></p>
+                  <ul class="list-inline item-details">
+                    <li>Language:
+                      <strong>
+                        Javascript
+                      </strong>
+                    </li>
+                    <li>Frameworks:
+                      <strong>
+                        React Native, Mapbox (For Geolocation and Maps)
+                      </strong>
+                    </li>
+                    <li>Github:
+                      <strong>
+                        <a href="#">enter URL here</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">Our Project</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid img-centered" src="img/portfolio/p-2.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>Our new Project every processes had become fragmented; meaning quality and service were
+                    inconsistent. This lack of standardization was adversely impacting operating costs, productivity and
+                    customer satisfaction. For several years now Payfast has worked strategically with innovations as a
+                    means of developing new solutions, products and services. In line with this vision, Success was
+                    approached to find new payments solutions to offer Payfast customers on their website, including
+                    open invoice and partial payments options.</p>
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>
+                        <a href="#">Techs Soft</a>
+                      </strong>
+                    </li>
+                    <li>Date:
+                      <strong>
+                        <a href="#">April 2018</a>
+                      </strong>
+                    </li>
+                    <li>Service:
+                      <strong>
+                        <a href="#">Web Development</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">Our Project</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid img-centered" src="img/portfolio/p-3.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>Our new Project every processes had become fragmented; meaning quality and service were
+                    inconsistent. This lack of standardization was adversely impacting operating costs, productivity and
+                    customer satisfaction. For several years now Payfast has worked strategically with innovations as a
+                    means of developing new solutions, products and services. In line with this vision, Success was
+                    approached to find new payments solutions to offer Payfast customers on their website, including
+                    open invoice and partial payments options.</p>
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>
+                        <a href="#">Techs Soft</a>
+                      </strong>
+                    </li>
+                    <li>Date:
+                      <strong>
+                        <a href="#">April 2018</a>
+                      </strong>
+                    </li>
+                    <li>Service:
+                      <strong>
+                        <a href="#">Web Development</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">Our Project</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-6">
+                    <img class="img-fluid img-centered" src="img/portfolio/p-4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p>Our new Project every processes had become fragmented; meaning quality and service were
+                    inconsistent. This lack of standardization was adversely impacting operating costs, productivity and
+                    customer satisfaction. For several years now Payfast has worked strategically with innovations as a
+                    means of developing new solutions, products and services. In line with this vision, Success was
+                    approached to find new payments solutions to offer Payfast customers on their website, including
+                    open invoice and partial payments options.</p>
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>
+                        <a href="#">Techs Soft</a>
+                      </strong>
+                    </li>
+                    <li>Date:
+                      <strong>
+                        <a href="#">April 2018</a>
+                      </strong>
+                    </li>
+                    <li>Service:
+                      <strong>
+                        <a href="#">Web Development</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">VR/AR Educational Content with Spatial Tracking [PoC] </h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid img-centered" src="img/portfolio/VrAr.png" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>Worked on co-developing Proof of concept involving usage of the Google Tango platform to perform
+                    spatial tracking and Cardboard SDK to deliver an immersive
+                    Virtual Reality experience that would completely immerse a user in either content placed in
+                    real-world surroundings or transported to alternate dimensions
+                    that they can physically walk around and explore.
+                  </p>
+                  <p>Development was done for the use case of delivering educational content, under collaboration with
+                    1byZero Technologies Pvt Ltd, Bangalore</p>
+                  <ul class="list-inline item-details">
+                    <li>Tools/Platforms
+                      <strong>
+                        Unity Game Engine, Google Tango
+                      </strong>
+                    </li>
+                    <li>Date:
+                      <strong>
+                        December 2017
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">P5 Experiments</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid img-centered" src="img/p5js.svg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>So, one week I decided I should pick up a random framework or library and see what magic I can make
+                    out of it.
+                    I ended up at P5 js, and since I've dabbled in game Development, it was most interesting
+                    to try do some graphical development from a web perspective. I ended making a few mini games
+                    in like an hour each, over the course of the week. I'm working on putting them on up here so you can
+                    check them out
+                  </p>
+                  <p> Special thanks to the YT channel Coding Train for getting me interested and running me through the
+                    library
+                  </p>
+                  <ul class="list-inline item-details">
+                    <li>Language:
+                      <strong>
+                        HTML , JavaScript
+                      </strong>
+                    </li>
+                    <li>Frameworks:
+                      <strong>
+                        P5.js, Processing
+                      </strong>
+                    </li>
+                  </ul>
+                  <p><i>Below games work only on Desktop as they require keyboard inputs.</i></p>
+                  <div class="row item-details">
+                    <div class="col-md-6 col-xs-10 xs-offset-1">
+                      <div class="skill-box-invert">
+                        <a href="p5pages/projectile_trial/projectile.html" target="_blank">Projectile Cannon</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xs-10 xs-offset-1">
+                      <div class="skill-box-invert">
+                        <a href="p5pages/AsteroidRumble/asteroid.html" target="_blank">Asteroid Rumble</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">Valet Employee Management [Ongoing Project]</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- <img class="img-fluid img-centered" src="img/portfolio/p-7.jpg" alt=""> -->
+                </div>
+                <div class="col-md-12">
+                  <p>Part of Development of a system to manage registration, supervision and management of employees at
+                    a Valet firm. Includes a mobile application to facilitate attendance through
+                    various methods, and an accompanying backend to store and crunch the necessary data. Was responsible
+                    for the mobile application UI and logic, using React native.
+                  </p>
+                  <ul class="list-inline item-details">
+                    <li>Framework:<br>
+                      <strong>
+                        Front-end : React Native
+                      </strong><br>
+                      <strong>
+                        Back-end : Node, Express
+                      </strong><br>
+                      <strong>
+                        Database : MongoDB
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">Our Project</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid img-centered" src="img/portfolio/p-8.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>Our new Project every processes had become fragmented; meaning quality and service were
+                    inconsistent. This lack of standardization was adversely impacting operating costs, productivity and
+                    customer satisfaction. For several years now Payfast has worked strategically with innovations as a
+                    means of developing new solutions, products and services. In line with this vision, Success was
+                    approached to find new payments solutions to offer Payfast customers on their website, including
+                    open invoice and partial payments options.</p>
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>
+                        <a href="#">Techs Soft</a>
+                      </strong>
+                    </li>
+                    <li>Date:
+                      <strong>
+                        <a href="#">April 2018</a>
+                      </strong>
+                    </li>
+                    <li>Service:
+                      <strong>
+                        <a href="#">Web Development</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="modal-body">
+              <div class="title-bar">
+                <div class="col-md-12">
+                  <h2 class="text-center">Our Project</h2>
+                  <div class="heading-border"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid img-centered" src="img/portfolio/p-9.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>Our new Project every processes had become fragmented; meaning quality and service were
+                    inconsistent. This lack of standardization was adversely impacting operating costs, productivity and
+                    customer satisfaction. For several years now Payfast has worked strategically with innovations as a
+                    means of developing new solutions, products and services. In line with this vision, Success was
+                    approached to find new payments solutions to offer Payfast customers on their website, including
+                    open invoice and partial payments options.</p>
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>
+                        <a href="#">Techs Soft</a>
+                      </strong>
+                    </li>
+                    <li>Date:
+                      <strong>
+                        <a href="#">April 2018</a>
+                      </strong>
+                    </li>
+                    <li>Service:
+                      <strong>
+                        <a href="#">Web Development</a>
+                      </strong>
+                    </li>
+                  </ul>
+                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i> Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Global javascript -->
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/counter/jquery.waypoints.min.js"></script>
+  <script src="js/counter/jquery.counterup.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(".filter-b").click(function () {
+        var value = $(this).attr('data-filter');
+        if (value == "all") {
+          $('.filter').show('1000');
+        }
+        else {
+          $(".filter").not('.' + value).hide('3000');
+          $('.filter').filter('.' + value).show('3000');
+        }
+      });
+
+      if ($(".filter-b").removeClass("active")) {
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
+    });
+
+    function disablePreloader() {
+      $('.preloader').fadeOut(500);
+    }
+
+    // SKILLS
+    $(function () {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+      });
+
+    });
+
+  </script>
+  <script type="text/javascript">
+    (function ($) {
+      $(document).ready(function () {
+        // hide .navbar first
+        window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
+        console.log(window.isMobile);
+        if (window.isMobile) {
+          $(".navbar").hide();
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 400) {
+              $('.navbar').fadeIn(500);
+            } else {
+              $('.navbar').fadeOut(500);
+            }
+          });
+        }
+      });
+    })(jQuery);
+      // document.addEventListener('scroll', onScroll);
+  </script>
+
 </body>
+
 </html>
