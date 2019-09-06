@@ -470,6 +470,11 @@ a:active {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+    a.portfolio-link {
+     height : 200px;
+     display:block;
+     overflow:hidden;
+    }
 }
 
 .portfolio-modal .modal-dialog {
