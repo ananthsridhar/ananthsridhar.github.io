@@ -340,7 +340,7 @@ a:active {
 
     }
     #skills .card{
-        font-size: 1.1em;
+        font-size: 1em;
     }
   }
 
@@ -469,6 +469,11 @@ a:active {
 @media (min-width: 767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
+    }
+    a.portfolio-link {
+     height : 200px;
+     display:block;
+     overflow:hidden;
     }
 }
 
