@@ -13,10 +13,13 @@ body {
     text-align:justify;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 786px) {
     body {
         padding-top: 0;
         /* padding-left: 17rem; */
+    }
+    h2 {
+        font-size: 3.5rem;
     }
 }
 
@@ -42,7 +45,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 a {
@@ -356,6 +359,7 @@ a:active {
   }
   .skills-list{
     margin-left : 0;
+    justify-content: space-evenly;
   }
 
   .skill-box{
