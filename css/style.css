@@ -431,6 +431,7 @@ a:active {
 #portfolio .portfolio-item .portfolio-link .caption-port:hover {
     /* opacity: 0; */
     box-shadow: #43276a 6px 6px 2px;
+    background: #1e152ac7;
 
 
 }
