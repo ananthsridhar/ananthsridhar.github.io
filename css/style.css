@@ -73,7 +73,7 @@ a:active {
   }
 
   .list-social-icons a:hover {
-      color: #2196f3;
+      color: #43276a;
   }
 
   .list-social-icons a .fa-lg {
@@ -85,7 +85,7 @@ a:active {
   }
 
   .list-icons .list-inline-item i:hover {
-      color: #2196f3;
+      color: #43276a;
   }
 
   .my-auto{
@@ -359,7 +359,8 @@ a:active {
   }
   .skills-list{
     margin-left : 0;
-    justify-content: space-evenly;
+    flex: 1;
+    justify-content: center
   }
 
   .skill-box{
