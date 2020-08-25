@@ -103,6 +103,15 @@ a:active {
   .only-screen {
       display : none
   }
+  .navbar-brand {
+      flex:1;
+      align-content: center;
+      margin :0;
+  }
+
+  .navbar-brand h2 {
+    text-shadow: 2px 2px #33940b;
+  }
   
   .misc-item{
     
@@ -139,8 +148,6 @@ a:active {
       }
       #sideNav .navbar-collapse {
           display: flex;
-          align-items: flex-start;
-          flex-grow: 0;
           width: 100%;
           margin-bottom: auto;
       }
@@ -248,8 +255,7 @@ a:active {
       padding-left:20rem !important;
     }
       section.resume-section {
-          padding-top: 3rem !important;
-          padding-bottom: 3rem !important;
+        padding: 3rem 10rem !important;
       }
   }
 
@@ -995,12 +1001,19 @@ canvas{
 
 }
 
+/* Main Title Animation */
+@keyframes floating {
+    from { transform: translate(0,  -0.1em)rotateZ(1deg); }
+    50% { transform: translate(0, 0.1em) }
+    to   { transform: translate(0, -0.1em)rotateZ(-1deg); }    
+}
+
 .main-title h1{
   color : white;
   -webkit-text-stroke: 1px #31558a;
   /* font-family: BitFont, Fallback, sans-serif !important; */
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 6rem;
+  line-height: 6rem;
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -1013,7 +1026,13 @@ canvas{
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+animation-name: floating;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
 }
+
 
 @media (min-width: 992px) {
   .main-title h1{
