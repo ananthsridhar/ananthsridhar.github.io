@@ -1000,6 +1000,15 @@ canvas{
   color:white;
 
 }
+footer {
+    padding: 1em;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30,21,42,1) 40%, rgba(8,0,255,0) 100%);
+}
+footer p {
+    margin: auto;
+    font-size: 0.8em;
+    color: #c9c9c9;
+}
 
 /* Main Title Animation */
 @keyframes floating {
