@@ -338,6 +338,10 @@ a:active {
     
   }
 
+  #experience .card ul {
+    padding-left: 1em;
+  }
+
 #experience .card .resume-date{
   text-transform: uppercase;
   color : white !important;
@@ -347,6 +351,10 @@ a:active {
     #experience .card h4{
       font-size: 1.5em;
 
+    }
+
+    #experience .card ul {
+        padding-left: 2em;
     }
     #skills .card{
         font-size: 1em;
@@ -426,6 +434,7 @@ a:active {
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
+    border-radius: 3em;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port {
@@ -443,8 +452,7 @@ a:active {
     /* opacity: 0; */
     box-shadow: #43276a 6px 6px 2px;
     background: #1e152ac7;
-
-
+    transform: scale(1.1);
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
@@ -1002,12 +1010,11 @@ canvas{
 }
 footer {
     padding: 1em;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30,21,42,1) 40%, rgba(8,0,255,0) 100%);
 }
 footer p {
     margin: auto;
     font-size: 0.8em;
-    color: #c9c9c9;
+    color: #1e152a;
 }
 
 /* Main Title Animation */
