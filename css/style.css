@@ -255,7 +255,7 @@ a:active {
       padding-left:20rem !important;
     }
       section.resume-section {
-        padding: 3rem 10rem !important;
+        padding: 3rem 5rem !important;
       }
   }
 
@@ -435,6 +435,8 @@ a:active {
     margin: 0 auto;
     cursor: pointer;
     border-radius: 3em;
+    height: 30vh;
+    /* background-attachment: fixed; */
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port {
